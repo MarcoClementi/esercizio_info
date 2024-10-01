@@ -1,0 +1,26 @@
+@startuml cleme_6
+
+class Pagamento {
+ + valore: int
+}
+
+class CartaDiCredito{
+    + nome: str
+    + numero: str
+    + data: str
+    + cvv: str
+    +processo_pagamento()
+}
+
+class Paypal{
+    + email: str
+    - password: str
+    +processo_pagamento()
+
+}
+
+Pagamento <|-- CartaDiCredito
+
+Pagamento <|-- Paypal
+
+@enduml
