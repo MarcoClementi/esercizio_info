@@ -1,0 +1,29 @@
+@startuml cleme_5
+class Dipendenti {
++nome: str
++stipendio: int
+
+    get_nome(): str
+    get_stipendio(): int
+
+}
+Dipendenti <|-- Manager 
+Dipendenti <|-- Sviluppatore
+
+class Manager {
++nome: str
++stipendio: int
++numero_di_team: int
+
+
+get_numero_di_team(): int
+}
+
+class Sviluppatore {
++nome: str
++stipendio: int
++linguaggio_di_programmazione: str
+
+get_linguaggio_di_programmazione():str
+}
+@enduml
