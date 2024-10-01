@@ -1,0 +1,9 @@
+@startuml cleme_3
+class Veicolo {
+ + tipo: str
+ + marca: str
+ + numero_veicoli: int
+    get_numero_veicoli(): int
+}
+
+@enduml

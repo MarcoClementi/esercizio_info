@@ -1,0 +1,7 @@
+@startuml cleme_4
+class Calcolatrice {
++ static addizione(numero1:int, numero2:int)
++ static sottrazione(numero1:int, numero2:int)
++ static moltiplicazione(numero1:int, numero2:int)
++ static divisione(numero1:int, numero2:int)
+}

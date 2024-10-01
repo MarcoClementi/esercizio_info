@@ -1,0 +1,11 @@
+@startuml cleme_2
+class ContoBancario {
+ + numero_conto: str
+ + intestatario: str
+ - saldo: int
+
+    get_saldo (): str
+    
+}
+
+@enduml
