@@ -1,0 +1,41 @@
+@startuml cleme_7
+
+class MaterialeBiblioteca {
+    - titolo: str 
+    - anno_pubblicazione: int
+    - disponibile: bool
+    + get_titolo(): str
+    + get_anno_pubblicazione(): int
+    + is_disponibile(): bool
+    + prestito(): 
+    + restituzione(): 
+    --
+    def_ricerca()
+}
+
+class Libro {
+    - autore: str
+    - numero_pagine: int
+    + get_autore(): str
+    + get_numero_pagine(): int
+}
+
+class Rivista {
+    - numero_edizione: int
+    - mese_pubblicazione: str
+    + get_numero_edizione(): int
+    + get_mese_pubblicazione(): str
+}
+
+class DVD {
+    - regista: str
+    - durata: int
+    + get_regista(): str
+    + get_durata(): int
+}
+
+MaterialeBiblioteca <|-- Libro
+MaterialeBiblioteca <|-- Rivista
+MaterialeBiblioteca <|-- DVD
+
+@enduml
