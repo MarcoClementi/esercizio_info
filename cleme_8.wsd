@@ -1,0 +1,32 @@
+@startuml cleme_8
+class Piatto {
++ nome: str
++ prezzo: float
++ disponibile: bool
+}
+
+class Antipasto(Piatto) {
++ ingredienti: list
++ porzione: str
+}
+
+class Primo(Piatto) {
++ tipo_pasta: str
++ sugo: str
+}
+
+class Secondo(Piatto) {
++ tipo_carne: str
++ cottura: str
+}
+
+class Dolce(Piatto) {
++ tipo_dolce: str
++ calorie: int
+}
+
+Piatto <|-- Antipasto
+Piatto <|-- Primo
+Piatto <|-- Secondo
+Piatto <|-- Dolce
+@enduml
