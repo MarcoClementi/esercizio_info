@@ -1,0 +1,18 @@
+@startuml cleme_9
+class Libro {
+    - _titolo: str
+    - _autore: str
+    - _pagine: int
+    + __init__(titolo: str, autore: str, pagine: int)
+    + titolo: str
+    + autore: str
+    + pagine: int
+}
+
+Libro : + titolo() : str
+Libro : + titolo(valore: str)
+Libro : + autore() : str
+Libro : + autore(valore: str)
+Libro : + pagine() : int
+Libro : + pagine(valore: int)
+@enduml
