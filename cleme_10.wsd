@@ -1,0 +1,16 @@
+@startuml cleme_10
+class Frazione {
+    + x: int
+    + y: int
+    + __init__(x: int, y: int)
+    + __add__(altro: Frazione)  
+    + __sub__(altro: Frazione)  
+    + __mul__(altro: Frazione)  
+    + __str__() : str
+}
+
+Frazione : + __add__(altro: Frazione)  
+Frazione : + __sub__(altro: Frazione)  
+Frazione : + __mul__(altro: Frazione) 
+Frazione : + __str__() : str
+@enduml
