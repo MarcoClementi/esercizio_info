@@ -1,0 +1,37 @@
+@startuml cleme_11
+class Ricetta {
+  - nome: str
+  - tempo_preparazione: int
+  - ingredienti: list<str>
+  - difficolta: str
+  + __init__(nome, tempo_preparazione, ingredienti, difficolta)
+  + aggiungi_ingrediente(ingrediente: string)
+  + __str__(): str
+}
+
+class Primo {
+  - tipo_pasta: str
+  - sugo: str
+  + __init__(nome, tempo_preparazione, ingredienti, difficolta, tipo_pasta, sugo)
+  + __str__(): str
+}
+
+class Secondo {
+  - tipo_carne: str
+  - cottura: str
+  + __init__(nome, tempo_preparazione, ingredienti, difficolta, tipo_carne, cottura)
+  + __str__(): str
+}
+
+class Dolce {
+  - zucchero: int
+  - tipo_dolce: str
+  + __init__(nome, tempo_preparazione, ingredienti, difficolta, zucchero, tipo_dolce)
+  + __str__(): str
+}
+
+Ricetta <|-- Primo
+Ricetta <|-- Secondo
+Ricetta <|-- Dolce
+
+@enduml
