@@ -1,0 +1,19 @@
+@startuml cleme_12
+class Auto {
+  - marca: string
+  - modello: string
+  - motore: Motore
+  + __init__(marca, modello)
+  + associa_motore(motore: Motore)
+}
+
+class Motore {
+  - numero_seriale: string
+  - tipo_carburante: string
+  - auto: Auto
+  + __init__(numero_seriale, tipo_carburante)
+  + associa_auto(auto: Auto)
+}
+
+Auto <---> Motore
+@enduml
