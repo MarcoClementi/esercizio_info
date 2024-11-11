@@ -1,0 +1,24 @@
+@startuml cleme_13
+class Stanza {
+  - nome: string
+  - superficie: int
+  + get_nome(): string
+  + get_superficie(): int
+  + set_nome(nome: string)
+  + set_superficie(superficie: int)
+}
+
+class Casa {
+  - indirizzo: string
+  - proprietario: string
+  - stanze: List<Stanza>
+  + get_indirizzo(): string
+  + get_proprietario(): string
+  + get_stanze(): List<Stanza>
+  + set_indirizzo(indirizzo: string)
+  + set_proprietario(proprietario: string)
+  + aggiungi_stanza(stanza: Stanza)
+}
+
+Casa --* Stanza
+@enduml
