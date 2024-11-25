@@ -124,3 +124,5 @@ class StazioneOrbitante(VeicoloSpaziale):
         self._moduli = moduli
         self._capacita_aggancio = capacita_aggancio
         self._veicoli_agganciati = []
+
+    
