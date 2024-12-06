@@ -1,0 +1,23 @@
+@startuml cleme14
+
+class Studente {
+  - nome: String
+  - matricola: String
+  - corsi: List
+  + __init__(nome: String, matricola: String)
+  + aggiungi_corso(corso: Corso)
+  + lista_corsi(): List[String]
+}
+
+class Corso {
+  - titolo: String
+  - codice: String
+  - studenti: List
+  + __init__(titolo: String, codice: String)
+  + aggiungi_studente(studente: Studente)
+  + lista_studenti(): List[String]
+}
+
+Studente "*" -- "*" Corso : iscritto a >
+
+@enduml
