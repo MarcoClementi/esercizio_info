@@ -5,7 +5,7 @@ classDiagram
         +string cognome
         +string strumento
         +List<Studente> studenti
-        +def_aggiungi_studente() -->Void 
+        +aggiungi_studente() -->Void 
     }
 
     class Studente {
