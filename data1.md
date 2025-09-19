@@ -35,11 +35,12 @@ erDiagram
     string località_di_produzione
     }
 
-    MIELE_DEGLI_DEI ||--o{ TIPOLOGIA : "è di tipo"
+    MIELE_DEGLI_DEI ||--|| TIPOLOGIA : "è di tipo"
     APICOLTORE ||--o{ APIARIO : "gestisce"
     APIARIO ||--o{ MIELE_DEGLI_DEI : "produce"
     APICOLTORE ||--o{ MIELE_DEGLI_DEI : "produce"
 ```
+
 
 
 
